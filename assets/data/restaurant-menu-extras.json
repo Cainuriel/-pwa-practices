@@ -1,0 +1,47 @@
+[
+    {
+        "idExtra": 1,
+        "name": "Add extra chesse",
+        "price": 1.5
+    },
+    {
+        "idExtra": 2,
+        "name": "Add extra bacon",
+        "price": 1.5
+    },
+    {
+        "idExtra": 3,
+        "name": "Add extra yogurt sauce",
+        "price": 1
+    },
+    {
+        "idExtra": 4,
+        "name": "Add extra cream",
+        "price": 1
+    },
+    {
+        "idExtra": 5,
+        "name": "Add extra ice cream",
+        "price": 1.5
+    },
+    {
+        "idExtra": 6,
+        "name": "Add extra chesse",
+        "price": 1.5
+    },
+    {
+        "idExtra": 7,
+        "name": "Add extra chocolate ice cream",
+        "price": 2.5
+    },
+    {
+        "idExtra": 8,
+        "name": "Add extra maple syrup",
+        "price": 1
+    },
+    {
+        "idExtra": 9,
+        "name": "Make it frozen",
+        "price": 1.50
+    }
+]

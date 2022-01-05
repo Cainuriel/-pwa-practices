@@ -16,13 +16,10 @@ MIT
 @angular/service-worker
 MIT
 
-@ionic-native/core
+@awesome-cordova-plugins/camera
 MIT
 
-@ionic-native/in-app-browser
-MIT
-
-@ionic-native/social-sharing
+@awesome-cordova-plugins/core
 MIT
 
 @ionic/angular
