@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1641378691396,
+  "timestamp": 1641405510220,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -64,7 +64,7 @@
         "/6959.564fb0bbdee7123b727f.js",
         "/7221.8e149d2a55e87e89ac0a.js",
         "/7370.881f813e639df141a75c.js",
-        "/7381.d8022b840b8738a71a35.js",
+        "/7381.71903f99d50e32f956bc.js",
         "/7487.2fe107ff2a94fc02cb36.js",
         "/7542.32421adc34211e2ffaf8.js",
         "/7618.06937e7da6cd0250377a.js",
@@ -88,7 +88,7 @@
         "/polyfills-css-shim.75e632ae449248be7cce.js",
         "/polyfills-dom.ad34e43443d839ebe441.js",
         "/polyfills.df44bf8566ef70170894.js",
-        "/runtime.0817704bf9a18354e4e1.js",
+        "/runtime.82e50061cf6c18d90812.js",
         "/styles.b3bd7e3458b394c93c7e.css"
       ],
       "patterns": []
@@ -239,7 +239,7 @@
     "/6959.564fb0bbdee7123b727f.js": "b1e28c8f5ca73da098c48ad351372dd344a1ca73",
     "/7221.8e149d2a55e87e89ac0a.js": "6a53bc48745cd175891ce031221de815e9fb3680",
     "/7370.881f813e639df141a75c.js": "8668e7dda93c981c0c87257b950ca5dad64e1e42",
-    "/7381.d8022b840b8738a71a35.js": "e311a34e02d858cf7cfe440c59cfd7395b3fcf8f",
+    "/7381.71903f99d50e32f956bc.js": "ed76421140e0b00918d0fee72f312abaccf81bdc",
     "/7487.2fe107ff2a94fc02cb36.js": "a5b9b82e7d031dbac7eca58019ea26faa44ba16b",
     "/7542.32421adc34211e2ffaf8.js": "b2d8e60eb33ce6023dd1cc51ba9bf760ca3f3a84",
     "/7618.06937e7da6cd0250377a.js": "6d195eb11149467af207859087c1b43c470ef2f7",
@@ -333,15 +333,15 @@
     "/assets/videos/Otium_Animation.mp4": "554cb8aa82839a996150529720252cb26e422526",
     "/common.361da500f91478470a85.js": "3c751884d9af5f2fed0bcdf2d0759276a89c6f5f",
     "/gradient-background.77a6e207c519df4705d8.jpg": "e14d82d4e95874360d9d67f4cefe1808ef3b25b3",
-    "/index.html": "ca304b60e138063c6d47278ffd72cd86fbf4bcc8",
+    "/index.html": "012ebcd9248cd8d271249efa66d25e0ed3b45708",
     "/main.8e2c6bd7667de242bdb7.js": "6d5050685b19c6497448f457652432b27acb3cec",
-    "/manifest.webmanifest": "9a088b7c4339228d1082e666ce105dc889bc180c",
+    "/manifest.webmanifest": "da2061dba175bf2d881980e8596ff5343e2dd7b6",
     "/map2.cc5a16e1a44a6013e26c.png": "278b6931ee66ccefed4163ffae28955a242af0ab",
     "/polyfills-core-js.d91c09d937434b76ca82.js": "d339b66fd741945afb150edbcbc51cf914780cab",
     "/polyfills-css-shim.75e632ae449248be7cce.js": "32c032552331122126c1af04a8f6dd0ed41fb3f6",
     "/polyfills-dom.ad34e43443d839ebe441.js": "ee4a9cce771cc7dd59a2b50c5460a6019b212acd",
     "/polyfills.df44bf8566ef70170894.js": "6856be6f49e9f87f4436e8d6a5c493310ccee192",
-    "/runtime.0817704bf9a18354e4e1.js": "27ffcd7aa614720bd6c24a9cc0a517618763b7b7",
+    "/runtime.82e50061cf6c18d90812.js": "d41e7b4dc5ae1f2db72d23f5cd1443dcc59e2c99",
     "/scan-qr.4b2ed2d83096c64ffa8b.png": "22610a5f03ec2fca05159c108119cdc5607daac9",
     "/styles.b3bd7e3458b394c93c7e.css": "6f0b4376293e86f489e4196d21c2435e86f32764"
   },
