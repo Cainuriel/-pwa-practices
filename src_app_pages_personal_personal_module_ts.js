@@ -610,13 +610,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
+// version de fernando
+// import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
+// version con capacitor Camera
 
-//declare var window: any;
+//declare var window: any; // version de fernando
 let PersonalPage = class PersonalPage {
     constructor(userservice) {
         this.userservice = userservice;
-        this.tempImg = '../../../assets/img/userDefault.png';
     }
     get dataUser() {
         return this.userservice.getUser;
@@ -625,8 +626,10 @@ let PersonalPage = class PersonalPage {
         setTimeout(() => {
             this.user = this.dataUser;
             this.dateUser = new Date(this.user.birth);
+            this.tempImg = this.dataUser.img;
         }, 500);
     }
+    // VERSION DE FERNANDO DEL CURSO DE IONIC CON CORDOVA
     // camara() {
     //   console.log('entro en funcion de camara');
     //   const options: CameraOptions = {
@@ -638,22 +641,26 @@ let PersonalPage = class PersonalPage {
     //     sourceType: this.camera.PictureSourceType.CAMERA
     //   };
     //   this.camera.getPicture(options).then( ( imageData ) => {
-    //   //  let base64Image = 'data:image/jpeg;base64,' + imageData;
+    // //    let base64Image = 'data:image/jpeg;base64,' + imageData;
     //   const img = window.Ionic.WebView.convertFileSrc(imageData);
     //     console.log('imagen de la camara',img);
-    //    this.tempImg = img;
+    //     this.tempImg = img;
+    //    //this.tempImg = img;
     //    }, (err) => {
     //     // Handle error
     //    });
     // }
+    // todo --------------------------------------------------Version con Capacitor Camera
     camara() {
         return (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__awaiter)(this, void 0, void 0, function* () {
             const image = yield _capacitor_camera__WEBPACK_IMPORTED_MODULE_3__.Camera.getPhoto({
                 quality: 90,
                 allowEditing: false,
-                resultType: _capacitor_camera__WEBPACK_IMPORTED_MODULE_3__.CameraResultType.Uri,
-                saveToGallery: true
-                // source: CameraSource.Photos
+                resultType: _capacitor_camera__WEBPACK_IMPORTED_MODULE_3__.CameraResultType.Base64,
+                saveToGallery: true,
+                width: 160,
+                height: 160
+                //source: CameraSource.Photos
             });
             if (image) {
                 this.saveImage(image);
@@ -662,8 +669,9 @@ let PersonalPage = class PersonalPage {
     }
     saveImage(photo) {
         return (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__awaiter)(this, void 0, void 0, function* () {
-            console.log('foto ', photo);
-            this.tempImg = photo.webPath;
+            //  console.log('imagen ',  photo.base64String);
+            this.tempImg = 'data:image/png;base64,' + photo.base64String;
+            yield this.userservice.saveUserImage(this.tempImg);
         });
     }
 };
@@ -693,7 +701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("@charset \"UTF-8\";\nion-content {\n  --background: url('gradient-background.jpg') no-repeat top center/cover fixed, #fff;\n  height: 100vh !important;\n}\n.avatar {\n  width: 160px;\n  height: 160px;\n}\nimg {\n  display: block;\n  border-radius: 50%;\n  position: absolute;\n  bottom: calc(-1*(80px + 4px));\n  border: 8px solid #9Dc912;\n  background-color: #fff;\n}\n.btc-edit {\n  position: absolute;\n  top: 200px;\n  --background: rgb(207, 146, 13);\n}\n.card-body {\n  position: relative;\n  padding: 30px;\n  height: calc(100vh – (200px + 56px));\n  overflow: hidden;\n}\n.name {\n  font-size: 24px;\n  font-weight: 600;\n  color: var(--ion-color-primary);\n}\n.data {\n  font-size: 90%;\n  color: var(--ion-color-secondary);\n  text-transform: uppercase;\n  margin: 0 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBlcnNvbmFsLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUFBaEI7RUFDSSxtRkFBQTtFQUNBLHdCQUFBO0FBRUo7QUFDQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0FBRUo7QUFFQTtFQUNJLGNBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsNkJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0FBQ0o7QUFFQTtFQUNLLGtCQUFBO0VBQ0EsVUFBQTtFQUNELCtCQUFBO0FBQ0o7QUFFQTtFQUNJLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLG9DQUFBO0VBQ0EsZ0JBQUE7QUFDSjtBQUVBO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0VBQ0EsK0JBQUE7QUFDSjtBQUVBO0VBQ0ksY0FBQTtFQUNBLGlDQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0FBQ0oiLCJmaWxlIjoicGVyc29uYWwucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGNoYXJzZXQgXCJVVEYtOFwiO1xuaW9uLWNvbnRlbnQge1xuICAtLWJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uL2Fzc2V0cy9pbWcvZ3JhZGllbnQtYmFja2dyb3VuZC5qcGdcIikgbm8tcmVwZWF0IHRvcCBjZW50ZXIvY292ZXIgZml4ZWQsICNmZmY7XG4gIGhlaWdodDogMTAwdmggIWltcG9ydGFudDtcbn1cblxuLmF2YXRhciB7XG4gIHdpZHRoOiAxNjBweDtcbiAgaGVpZ2h0OiAxNjBweDtcbn1cblxuaW1nIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IGNhbGMoLTEqKDgwcHggKyA0cHgpKTtcbiAgYm9yZGVyOiA4cHggc29saWQgIzlEYzkxMjtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbn1cblxuLmJ0Yy1lZGl0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDIwMHB4O1xuICAtLWJhY2tncm91bmQ6IHJnYigyMDcsIDE0NiwgMTMpO1xufVxuXG4uY2FyZC1ib2R5IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nOiAzMHB4O1xuICBoZWlnaHQ6IGNhbGMoMTAwdmgg4oCTICgyMDBweCArIDU2cHgpKTtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLm5hbWUge1xuICBmb250LXNpemU6IDI0cHg7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG4gIGNvbG9yOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeSk7XG59XG5cbi5kYXRhIHtcbiAgZm9udC1zaXplOiA5MCU7XG4gIGNvbG9yOiB2YXIoLS1pb24tY29sb3Itc2Vjb25kYXJ5KTtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luOiAwIGF1dG87XG59Il19 */");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("@charset \"UTF-8\";\nion-content {\n  --background: url('gradient-background.jpg') no-repeat top center/cover fixed, #fff;\n  --offset-bottom: 100vh !important;\n}\n.avatar {\n  width: 160px;\n  height: 160px;\n}\nimg {\n  display: block;\n  border-radius: 50%;\n  position: absolute;\n  bottom: calc(-1*(80px + 4px));\n  border: 8px solid #9Dc912;\n  background-color: #fff;\n}\n.btc-edit {\n  position: absolute;\n  top: 200px;\n  --background: rgb(207, 146, 13);\n}\n.card-body {\n  position: relative;\n  padding: 30px;\n  height: calc(100vh – (200px + 56px));\n  overflow: hidden;\n}\n.name {\n  font-size: 24px;\n  font-weight: 600;\n  color: var(--ion-color-primary);\n}\n.data {\n  font-size: 90%;\n  color: var(--ion-color-secondary);\n  text-transform: uppercase;\n  margin: 0 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBlcnNvbmFsLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUFBaEI7RUFDSSxtRkFBQTtFQUNBLGlDQUFBO0FBRUo7QUFDQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0FBRUo7QUFFQTtFQUNJLGNBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsNkJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0FBQ0o7QUFFQTtFQUNLLGtCQUFBO0VBQ0EsVUFBQTtFQUNELCtCQUFBO0FBQ0o7QUFFQTtFQUNJLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLG9DQUFBO0VBQ0EsZ0JBQUE7QUFDSjtBQUVBO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0VBQ0EsK0JBQUE7QUFDSjtBQUVBO0VBQ0ksY0FBQTtFQUNBLGlDQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0FBQ0oiLCJmaWxlIjoicGVyc29uYWwucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGNoYXJzZXQgXCJVVEYtOFwiO1xuaW9uLWNvbnRlbnQge1xuICAtLWJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uL2Fzc2V0cy9pbWcvZ3JhZGllbnQtYmFja2dyb3VuZC5qcGdcIikgbm8tcmVwZWF0IHRvcCBjZW50ZXIvY292ZXIgZml4ZWQsICNmZmY7XG4gIC0tb2Zmc2V0LWJvdHRvbTogMTAwdmggIWltcG9ydGFudDtcbn1cblxuLmF2YXRhciB7XG4gIHdpZHRoOiAxNjBweDtcbiAgaGVpZ2h0OiAxNjBweDtcbn1cblxuaW1nIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IGNhbGMoLTEqKDgwcHggKyA0cHgpKTtcbiAgYm9yZGVyOiA4cHggc29saWQgIzlEYzkxMjtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbn1cblxuLmJ0Yy1lZGl0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDIwMHB4O1xuICAtLWJhY2tncm91bmQ6IHJnYigyMDcsIDE0NiwgMTMpO1xufVxuXG4uY2FyZC1ib2R5IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nOiAzMHB4O1xuICBoZWlnaHQ6IGNhbGMoMTAwdmgg4oCTICgyMDBweCArIDU2cHgpKTtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLm5hbWUge1xuICBmb250LXNpemU6IDI0cHg7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG4gIGNvbG9yOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeSk7XG59XG5cbi5kYXRhIHtcbiAgZm9udC1zaXplOiA5MCU7XG4gIGNvbG9yOiB2YXIoLS1pb24tY29sb3Itc2Vjb25kYXJ5KTtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luOiAwIGF1dG87XG59Il19 */");
 
 /***/ }),
 
@@ -708,7 +716,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("\r\n     <app-header></app-header>\r\n\r\n\r\n<ion-content>\r\n<ion-grid class=\"ion-padding\">\r\n  <ion-row>\r\n    <ion-col size=\"6\">\r\n   <div class=\"avatar\">\r\n      <img src={{tempImg}}>\r\n    </div>\r\n    </ion-col>\r\n    <ion-col size=\"6\">\r\n         <ion-button class=\"btc-edit\" expand=\"block\"  shape=\"round\" (click)=\"camara()\" >\r\n           Update Image <ion-icon slot=\"end\" name=\"camera\"></ion-icon>\r\n         </ion-button>\r\n       </ion-col>\r\n  </ion-row>\r\n</ion-grid>\r\n  <ion-grid class=\"ion-padding ion-text-center\" style=\"margin-top: 50px;\" >\r\n    <ion-row>\r\n      <ion-col size=\"12\">\r\n      <div>\r\n        <h3 style=\"margin: 20px;\" class=\"name\">{{ user.name }} {{ user.secondName }}</h3>\r\n        <h5 style=\"margin: 20px;\" class=\"data\">Tel: {{ user.phone }}</h5>\r\n        <h5 style=\"margin: 20px;\" class=\"data\">Birth: {{ dateUser | date: 'd-M-yyyy ' }}</h5>\r\n     </div>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n  <ion-button style=\"margin: 20px;\" expand=\"block\" shape=\"round\" color=\"tertiary\" >Credit Card Data</ion-button>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n          <ion-button style=\"margin: 20px;\" expand=\"block\" shape=\"round\" color=\"secondary\">Metamask account</ion-button>  \r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n          <ion-button style=\"margin: 20px;\" expand=\"block\" shape=\"round\"color=\"primary\">Edit personal data</ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n</ion-content>");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("\r\n     <app-header></app-header>\r\n\r\n\r\n<ion-content>\r\n<ion-grid class=\"ion-padding\">\r\n  <ion-row>\r\n    <ion-col size=\"6\">\r\n   <div class=\"avatar\">\r\n      <img src={{tempImg}}>\r\n   \r\n    </div>\r\n    </ion-col>\r\n    <ion-col size=\"6\">\r\n         <ion-button class=\"btc-edit\" expand=\"block\"  shape=\"round\" (click)=\"camara()\" >\r\n           Update Image <ion-icon slot=\"end\" name=\"camera\"></ion-icon>\r\n         </ion-button>\r\n       </ion-col>\r\n  </ion-row>\r\n</ion-grid>\r\n  <ion-grid class=\"ion-padding ion-text-center\" style=\"margin-top: 50px;\" >\r\n    <ion-row>\r\n      <ion-col size=\"12\">\r\n      <div>\r\n        <h3 style=\"margin: 20px;\" class=\"name\">{{ user.name }} {{ user.secondName }}</h3>\r\n        <h5 style=\"margin: 20px;\" class=\"data\">Tel: {{ user.phone }}</h5>\r\n        <h5 style=\"margin: 20px;\" class=\"data\">Birth: {{ dateUser | date: 'd-M-yyyy ' }}</h5>\r\n     </div>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n  <ion-button style=\"margin: 20px;\" expand=\"block\" shape=\"round\" color=\"tertiary\" >Credit Card Data</ion-button>\r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n          <ion-button style=\"margin: 20px;\" expand=\"block\" shape=\"round\" color=\"secondary\">Metamask account</ion-button>  \r\n      </ion-col>\r\n      <ion-col size=\"12\">\r\n          <ion-button style=\"margin: 20px;\" expand=\"block\" shape=\"round\"color=\"primary\">Edit personal data</ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n</ion-content>");
 
 /***/ })
 
