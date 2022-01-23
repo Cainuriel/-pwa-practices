@@ -312,18 +312,18 @@
         "idCategory": 14,
         "codeProduct": "",
         "type": "drink",
-        "name": "COCKTAIL STRAWBERRY",
-        "img": "/assets/img/drink/cocktail.png",
+        "name": "MOJITO",
+        "img": "/assets/img/drink/mojito.png",
         "allergens": [{"allergen":""}],
         "description": [
             {
                 "line": "white rum"
             },
             {
-                "line": "Strawberry juice"
+                "line": "mint leaves"
             },
             {
-                "line": "Cane sugar"
+                "line": "sliced lime"  
             }
         ],                
         "price": 12,
@@ -337,30 +337,122 @@
     },
     {
         "idProduct": 13,
-        "idCategory": 14,
+        "idCategory": 15,
         "codeProduct": "",
         "type": "drink",
-        "name": "COCKTAIL STRAWBERRY",
-        "img": "/assets/img/drink/cocktail.png",
+        "name": "BLACK BEER",
+        "img": "/assets/img/drink/black-beer.png",
         "allergens": [{"allergen":""}],
         "description": [
             {
-                "line": "white rum"
-            },
-            {
-                "line": "Strawberry juice"
-            },
-            {
-                "line": "Cane sugar"
+                "line": "Black beer"
             }
         ],                
-        "price": 12,
-        "extras": [
+        "price": 4
+    },
+    {
+        "idProduct": 14,
+        "idCategory": 15,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "LAGER BEER",
+        "img": "/assets/img/drink/lager-beer.png",
+        "allergens": [{"allergen":""}],
+        "description": [
             {
-                "idExtra": 9,
-                "name": "Make it frozen",
-                "price": 1.50
+                "line": "lager beer"
             }
-        ]            
+        ],                
+        "price": 3        
+    },
+    {
+        "idProduct": 15,
+        "idCategory": 16,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "RED WINE",
+        "img": "/assets/img/drink/red-wine.png",
+        "allergens": [{"allergen":""}],
+        "description": [
+            {
+                "line": "Red wine"
+            }
+        ],                
+        "price": 12       
+    },
+    {
+        "idProduct": 16,
+        "idCategory": 17,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "Coke",
+        "img": "/assets/img/drink/coke.png",
+        "allergens": [{"allergen":""}],
+        "description": [
+            {
+                "line": "Coke Bottle 33cl"
+            }
+        ],                
+        "price": 1        
+    },
+    {
+        "idProduct": 17,
+        "idCategory": 17,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "FANTA",
+        "img": "/assets/img/drink/fanta.png",
+        "allergens": [{"allergen":""}],
+        "description": [
+            {
+                "line": "Fanta Bottle 33cl"
+            }
+        ],
+        "price": 1
+    },
+    {
+        "idProduct": 18,
+        "idCategory": 17,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "SPRITE",
+        "img": "/assets/img/drink/sprite.png",
+        "allergens": [{"allergen":""}],
+        "description": [
+            {
+                "line": "Sprite Bottle 33cl"
+            }
+        ],
+        "price": 1
+    },
+    {
+        "idProduct": 19,
+        "idCategory": 17,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "PEPSI",
+        "img": "/assets/img/drink/pepsi.png",
+        "allergens": [{"allergen":""}],
+        "description": [
+            {
+                "line": "Pepsi Bottle 33cl"
+            }
+        ],                
+        "price": 1        
+    },
+    {
+        "idProduct": 20,
+        "idCategory": 18,
+        "codeProduct": "",
+        "type": "drink",
+        "name": "COFFEE",
+        "img": "/assets/img/drink/coffee.jpg",
+        "allergens": [{"allergen":""}],
+        "description": [
+            {
+                "line": "Coffe"
+            }
+        ],    
+        "price": 2
     }
 ]

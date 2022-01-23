@@ -96,5 +96,33 @@
         "category": "cocktail",
         "btnName": "Cocktail",
         "icon": "/assets/img/drink/cocktail.png"
+    },
+    {
+        "idCategory": 15,
+        "type": "drink",
+        "category": "beer",
+        "btnName": "Beer",
+        "icon": "/assets/icon/drink/beer.png"
+    },
+    {
+        "idCategory": 16,
+        "type": "drink",
+        "category": "wine",
+        "btnName": "Wine",
+        "icon": "/assets/icon/drink/red-wine.png"
+    },
+    {
+        "idCategory": 17,
+        "type": "drink",
+        "category": "soft-drinks",
+        "btnName": "Soft drinks",
+        "icon": "/assets/icon/drink/soft-drinks.png"
+    },
+    {
+        "idCategory": 18,
+        "type": "drink",
+        "category": "coffee",
+        "btnName": "Coffe",
+        "icon": "/assets/icon/drink/coffee.png"
     }
 ]
