@@ -1,458 +1,2374 @@
 [
     {
-        "idProduct": 1,
-        "idCategory": 1,
-        "codeProduct": "",
-        "type": "food",     
-        "name": "HAMBURGUER SPECIAL",
-        "img": "/assets/img/food/hamburger.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
+        "restaurant": {
+            "id": 1,
+            "table": null,
+            "name": "100 montaditos",
+            "img": "src/assets/logos-empresas/100montaditos.png"
+        },
+        "products": [    
             {
-                "line": "180 grs of beef"
+                "idProduct": 1,
+                "idCategory": 1,
+                "codeProduct": "",
+                "type": "food",     
+                "name": "HAMBURGUER SPECIAL",
+                "img": "/assets/img/food/hamburger.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "180 grs of beef"
+                    },
+                    {
+                        "line": "cheddar chesse"
+                    },
+                    {
+                        "line": "lettuce, tomato and"
+                    },
+                    {
+                        "line": "french fries"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
             },
             {
-                "line": "cheddar chesse"
+                "idProduct": 2,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MEAT LASAGNA",
+                "img": "/assets/img/food/lasagna.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "300 grs"
+                    },
+                    {
+                        "line": "chesse"
+                    },
+                    {
+                        "line": "crushed natural tomato"
+                    },
+                    {
+                        "line": "pork and beef"
+                    }
+                ],                
+                "price": 11,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
             },
             {
-                "line": "lettuce, tomato and"
+                "idProduct": 3,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SPAGHETTI",
+                "img": "/assets/img/food/pasta.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "seafood sauce"
+                    },
+                    {
+                        "line": "powdered cheese"
+                    }
+                ],                
+                "price": 13
             },
             {
-                "line": "french fries"
-            }
-        ],                
-        "price": 12,
-        "extras": [
-            {
-                "idExtra": 1,
-                "name": "Add extra chesse",
-                "price": 1.5
+                "idProduct": 4,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "VEGETARIAN PIZZA",
+                "img": "/assets/img/food/pizza_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
             },
             {
-                "idExtra": 2,
-                "name": "Add extra bacon",
-                "price": 1.5
-            }
-        ]            
-    },
-    {
-        "idProduct": 2,
-        "idCategory": 6,
-        "codeProduct": "",
-        "type": "food",
-        "name": "MEAT LASAGNA",
-        "img": "/assets/img/food/lasagna.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "300 grs"
+                "idProduct": 5,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "FOUR SEASONS PIZZA",
+                "img": "/assets/img/food/pizza.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
             },
             {
-                "line": "chesse"
+                "idProduct": 6,
+                "idCategory": 4,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SALMON",
+                "img": "/assets/img/food/salmon.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "authentic norwegian salmon"
+                    },
+                    {
+                        "line": "assorted vegetable garnish"
+                    },
+                    {
+                        "line": "Low calorie"
+                    }
+                ],                
+                "price": 13.5,
+                "extras": [
+                    {
+                        "idExtra": 3,
+                        "name": "Add extra yogurt sauce",
+                        "price": 1
+                    }
+                ]
             },
             {
-                "line": "crushed natural tomato"
+                "idProduct": 7,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "CAKE",
+                "img": "/assets/img/food/cake.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "three chocolates"
+                    },
+                    {
+                        "line": "done the same day"
+                    }
+                ],                
+                "price": 5.7,
+                "extras": [
+                    {
+                        "idExtra": 4,
+                        "name": "Add extra cream",
+                        "price": 1
+                    },
+                    {
+                        "idExtra": 5,
+                        "name": "Add extra ice cream",
+                        "price": 1.5
+                    }
+                ]            
             },
             {
-                "line": "pork and beef"
-            }
-        ],                
-        "price": 11,
-        "extras": [
-            {
-                "idExtra": 1,
-                "name": "Add extra chesse",
-                "price": 1.5
+                "idProduct": 8,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MACAROONS",
+                "img": "/assets/img/food/macaroons.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "variety of flavors"
+                    },
+                    {
+                        "line": "from the best pastry shop in town"
+                    }
+                ],                
+                "price": 7,
+                "extras": [
+                    {
+                        "idExtra": 7,
+                        "name": "Add extra chocolate ice cream",
+                        "price": 2.5
+                    }
+                ]            
             },
             {
-                "idExtra": 2,
-                "name": "Add extra bacon",
-                "price": 1.5
-            }
-        ]            
-    },
-    {
-        "idProduct": 3,
-        "idCategory": 6,
-        "codeProduct": "",
-        "type": "food",
-        "name": "SPAGHETTI",
-        "img": "/assets/img/food/pasta.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "seafood sauce"
+                "idProduct": 9,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "Pancake",
+                "img": "/assets/img/food/pancakes_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "american recipe"
+                    },
+                    {
+                        "line": "with ground cinnamon or vanilla"
+                    }
+                ],                
+                "price": 6,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
             },
             {
-                "line": "powdered cheese"
-            }
-        ],                
-        "price": 13
-    },
-    {
-        "idProduct": 4,
-        "idCategory": 7,
-        "codeProduct": "",
-        "type": "food",
-        "name": "VEGETARIAN PIZZA",
-        "img": "/assets/img/food/pizza_2.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "made in a wood-fired oven"
+                "idProduct": 10,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "HEALTHY PANCAKE",
+                "img": "/assets/img/food/pancakes.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made from oatmeal"
+                    },
+                    {
+                        "line": "vanilla essence"
+                    }
+                ],                
+                "price": 5,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
             },
             {
-                "line": "fresh vegetables from our land"
+                "idProduct": 11,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COCKTAIL STRAWBERRY",
+                "img": "/assets/img/drink/cocktail.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "Strawberry juice"
+                    },
+                    {
+                        "line": "Cane sugar"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
             },
             {
-                "line": "Thick mass"
-            }
-        ],                
-        "price": 10.5,
-        "extras": [
-            {
-                "idExtra": 1,
-                "name": "Add extra chesse",
-                "price": 1.5
-            }
-        ]            
-    },
-    {
-        "idProduct": 5,
-        "idCategory": 7,
-        "codeProduct": "",
-        "type": "food",
-        "name": "FOUR SEASONS PIZZA",
-        "img": "/assets/img/food/pizza.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "made in a wood-fired oven"
+                "idProduct": 12,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "MOJITO",
+                "img": "/assets/img/drink/mojito.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "mint leaves"
+                    },
+                    {
+                        "line": "sliced lime"  
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
             },
             {
-                "line": "fresh vegetables from our land"
+                "idProduct": 13,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "BLACK BEER",
+                "img": "/assets/img/drink/black-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Black beer"
+                    }
+                ],                
+                "price": 4
             },
             {
-                "line": "Thick mass"
-            }
-        ],                
-        "price": 10.5,
-        "extras": [
-            {
-                "idExtra": 1,
-                "name": "Add extra chesse",
-                "price": 1.5
-            }
-        ]            
-    },
-    {
-        "idProduct": 6,
-        "idCategory": 4,
-        "codeProduct": "",
-        "type": "food",
-        "name": "SALMON",
-        "img": "/assets/img/food/salmon.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "authentic norwegian salmon"
+                "idProduct": 14,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "LAGER BEER",
+                "img": "/assets/img/drink/lager-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "lager beer"
+                    }
+                ],                
+                "price": 3        
             },
             {
-                "line": "assorted vegetable garnish"
+                "idProduct": 15,
+                "idCategory": 16,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "RED WINE",
+                "img": "/assets/img/drink/red-wine.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Red wine"
+                    }
+                ],                
+                "price": 12       
             },
             {
-                "line": "Low calorie"
-            }
-        ],                
-        "price": 13.5,
-        "extras": [
+                "idProduct": 16,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "Coke",
+                "img": "/assets/img/drink/coke.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coke Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
             {
-                "idExtra": 3,
-                "name": "Add extra yogurt sauce",
+                "idProduct": 17,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "FANTA",
+                "img": "/assets/img/drink/fanta.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Fanta Bottle 33cl"
+                    }
+                ],
                 "price": 1
+            },
+            {
+                "idProduct": 18,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "SPRITE",
+                "img": "/assets/img/drink/sprite.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Sprite Bottle 33cl"
+                    }
+                ],
+                "price": 1
+            },
+            {
+                "idProduct": 19,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "PEPSI",
+                "img": "/assets/img/drink/pepsi.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Pepsi Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
+            {
+                "idProduct": 20,
+                "idCategory": 18,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COFFEE",
+                "img": "/assets/img/drink/coffee.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coffe"
+                    }
+                ],    
+                "price": 2
+            }
+        ],
+        "categories": [
+            {
+                "idCategory": 1,
+                "type": "food",
+                "category": "hamburguer",
+                "btnName": "Hamburger",
+                "icon": "/assets/icon/food/hamburger.png"
+            },
+            {
+                "idCategory": 2,
+                "type": "food",
+                "category": "hotdog",
+                "btnName": "Hotdog",
+                "icon": "/assets/icon/food/hotdog.png"
+            },
+            {
+                "idCategory": 3,
+                "type": "food",
+                "category": "meat",
+                "btnName": "Meat",
+                "icon": "/assets/icon/food/meat2.png"
+            },
+            {
+                "idCategory": 4,
+                "type": "food",
+                "category": "fish",
+                "btnName": "Fish",
+                "icon": "/assets/icon/food/fish2.png"
+            },
+            {
+                "idCategory": 5,
+                "type": "food",
+                "category": "paella",
+                "btnName": "Paella",
+                "icon": "/assets/icon/food/paella.png"
+            },
+            {
+                "idCategory": 6,
+                "type": "food",
+                "category": "pasta",
+                "btnName": "Pasta",
+                "icon": "/assets/icon/food/pasta.png"
+            },
+            {
+                "idCategory": 7,
+                "type": "food",
+                "category": "pizza",
+                "btnName": "Pizza",
+                "icon": "/assets/icon/food/pizza.png"
+            },
+            {
+                "idCategory": 8,
+                "type": "food",
+                "category": "sushi",
+                "btnName": "Sushi",
+                "icon": "/assets/icon/food/sushi.png"
+            },
+            {
+                "idCategory": 9,
+                "type": "food",
+                "category": "spicy",
+                "btnName": "Spicy",
+                "icon": "/assets/icon/food/chili_Pepper.png"
+            },
+            {
+                "idCategory": 10,
+                "type": "food",
+                "category": "taco",
+                "btnName": "Tacos",
+                "icon": "/assets/icon/food/taco.png"
+            },
+            {
+                "idCategory": 11,
+                "type": "food",
+                "category": "dessert",
+                "btnName": "Desserts",
+                "icon": "/assets/icon/food/dessert-pancakes.png"
+            },
+            {
+                "idCategory": 12,
+                "type": "food",
+                "category": "ice-cream",
+                "btnName": "Ice cream",
+                "icon": "/assets/icon/food/dessert-ice-cream2.png"
+            },
+            {
+                "idCategory": 13,
+                "type": "food",
+                "category": "pastries",
+                "btnName": "Pastries",
+                "icon": "/assets/icon/food/croissant.png"
+            },
+            {
+                "idCategory": 14,
+                "type": "drink",
+                "category": "cocktail",
+                "btnName": "Cocktail",
+                "icon": "/assets/img/drink/cocktail.png"
+            },
+            {
+                "idCategory": 15,
+                "type": "drink",
+                "category": "beer",
+                "btnName": "Beer",
+                "icon": "/assets/icon/drink/beer.png"
+            },
+            {
+                "idCategory": 16,
+                "type": "drink",
+                "category": "wine",
+                "btnName": "Wine",
+                "icon": "/assets/icon/drink/red-wine.png"
+            },
+            {
+                "idCategory": 17,
+                "type": "drink",
+                "category": "soft-drinks",
+                "btnName": "Soft drinks",
+                "icon": "/assets/icon/drink/soft-drinks.png"
+            },
+            {
+                "idCategory": 18,
+                "type": "drink",
+                "category": "coffee",
+                "btnName": "Coffe",
+                "icon": "/assets/icon/drink/coffee.png"
             }
         ]
     },
-    
     {
-        "idProduct": 7,
-        "idCategory": 11,
-        "codeProduct": "",
-        "type": "food",
-        "name": "CAKE",
-        "img": "/assets/img/food/cake.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
+        "restaurant": {
+            "id": 2,
+            "table": null,
+            "name": "Starbucks",
+            "img": "src/assets/logos-empresas/starbucks-coffee.png"
+        },
+        "products": [    
             {
-                "line": "three chocolates"
+                "idProduct": 1,
+                "idCategory": 1,
+                "codeProduct": "",
+                "type": "food",     
+                "name": "HAMBURGUER SPECIAL",
+                "img": "/assets/img/food/hamburger.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "180 grs of beef"
+                    },
+                    {
+                        "line": "cheddar chesse"
+                    },
+                    {
+                        "line": "lettuce, tomato and"
+                    },
+                    {
+                        "line": "french fries"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
             },
             {
-                "line": "done the same day"
-            }
-        ],                
-        "price": 5.7,
-        "extras": [
+                "idProduct": 2,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MEAT LASAGNA",
+                "img": "/assets/img/food/lasagna.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "300 grs"
+                    },
+                    {
+                        "line": "chesse"
+                    },
+                    {
+                        "line": "crushed natural tomato"
+                    },
+                    {
+                        "line": "pork and beef"
+                    }
+                ],                
+                "price": 11,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
+            },
             {
-                "idExtra": 4,
-                "name": "Add extra cream",
+                "idProduct": 3,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SPAGHETTI",
+                "img": "/assets/img/food/pasta.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "seafood sauce"
+                    },
+                    {
+                        "line": "powdered cheese"
+                    }
+                ],                
+                "price": 13
+            },
+            {
+                "idProduct": 4,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "VEGETARIAN PIZZA",
+                "img": "/assets/img/food/pizza_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 5,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "FOUR SEASONS PIZZA",
+                "img": "/assets/img/food/pizza.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 6,
+                "idCategory": 4,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SALMON",
+                "img": "/assets/img/food/salmon.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "authentic norwegian salmon"
+                    },
+                    {
+                        "line": "assorted vegetable garnish"
+                    },
+                    {
+                        "line": "Low calorie"
+                    }
+                ],                
+                "price": 13.5,
+                "extras": [
+                    {
+                        "idExtra": 3,
+                        "name": "Add extra yogurt sauce",
+                        "price": 1
+                    }
+                ]
+            },
+            {
+                "idProduct": 7,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "CAKE",
+                "img": "/assets/img/food/cake.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "three chocolates"
+                    },
+                    {
+                        "line": "done the same day"
+                    }
+                ],                
+                "price": 5.7,
+                "extras": [
+                    {
+                        "idExtra": 4,
+                        "name": "Add extra cream",
+                        "price": 1
+                    },
+                    {
+                        "idExtra": 5,
+                        "name": "Add extra ice cream",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 8,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MACAROONS",
+                "img": "/assets/img/food/macaroons.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "variety of flavors"
+                    },
+                    {
+                        "line": "from the best pastry shop in town"
+                    }
+                ],                
+                "price": 7,
+                "extras": [
+                    {
+                        "idExtra": 7,
+                        "name": "Add extra chocolate ice cream",
+                        "price": 2.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 9,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "Pancake",
+                "img": "/assets/img/food/pancakes_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "american recipe"
+                    },
+                    {
+                        "line": "with ground cinnamon or vanilla"
+                    }
+                ],                
+                "price": 6,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
+            },
+            {
+                "idProduct": 10,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "HEALTHY PANCAKE",
+                "img": "/assets/img/food/pancakes.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made from oatmeal"
+                    },
+                    {
+                        "line": "vanilla essence"
+                    }
+                ],                
+                "price": 5,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
+            },
+            {
+                "idProduct": 11,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COCKTAIL STRAWBERRY",
+                "img": "/assets/img/drink/cocktail.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "Strawberry juice"
+                    },
+                    {
+                        "line": "Cane sugar"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
+            },
+            {
+                "idProduct": 12,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "MOJITO",
+                "img": "/assets/img/drink/mojito.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "mint leaves"
+                    },
+                    {
+                        "line": "sliced lime"  
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
+            },
+            {
+                "idProduct": 13,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "BLACK BEER",
+                "img": "/assets/img/drink/black-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Black beer"
+                    }
+                ],                
+                "price": 4
+            },
+            {
+                "idProduct": 14,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "LAGER BEER",
+                "img": "/assets/img/drink/lager-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "lager beer"
+                    }
+                ],                
+                "price": 3        
+            },
+            {
+                "idProduct": 15,
+                "idCategory": 16,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "RED WINE",
+                "img": "/assets/img/drink/red-wine.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Red wine"
+                    }
+                ],                
+                "price": 12       
+            },
+            {
+                "idProduct": 16,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "Coke",
+                "img": "/assets/img/drink/coke.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coke Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
+            {
+                "idProduct": 17,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "FANTA",
+                "img": "/assets/img/drink/fanta.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Fanta Bottle 33cl"
+                    }
+                ],
                 "price": 1
             },
             {
-                "idExtra": 5,
-                "name": "Add extra ice cream",
-                "price": 1.5
-            }
-        ]            
-    },
-    {
-        "idProduct": 8,
-        "idCategory": 11,
-        "codeProduct": "",
-        "type": "food",
-        "name": "MACAROONS",
-        "img": "/assets/img/food/macaroons.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "variety of flavors"
-            },
-            {
-                "line": "from the best pastry shop in town"
-            }
-        ],                
-        "price": 7,
-        "extras": [
-            {
-                "idExtra": 7,
-                "name": "Add extra chocolate ice cream",
-                "price": 2.5
-            }
-        ]            
-    },
-    {
-        "idProduct": 9,
-        "idCategory": 11,
-        "codeProduct": "",
-        "type": "food",
-        "name": "Pancake",
-        "img": "/assets/img/food/pancakes_2.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "american recipe"
-            },
-            {
-                "line": "with ground cinnamon or vanilla"
-            }
-        ],                
-        "price": 6,
-        "extras": [
-            {
-                "idExtra": 8,
-                "name": "Add extra maple syrup",
+                "idProduct": 18,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "SPRITE",
+                "img": "/assets/img/drink/sprite.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Sprite Bottle 33cl"
+                    }
+                ],
                 "price": 1
-            }
-        ]            
-    },
-    {
-        "idProduct": 10,
-        "idCategory": 11,
-        "codeProduct": "",
-        "type": "food",
-        "name": "HEALTHY PANCAKE",
-        "img": "/assets/img/food/pancakes.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "made from oatmeal"
             },
             {
-                "line": "vanilla essence"
-            }
-        ],                
-        "price": 5,
-        "extras": [
-            {
-                "idExtra": 8,
-                "name": "Add extra maple syrup",
-                "price": 1
-            }
-        ]            
-    },
-    {
-        "idProduct": 11,
-        "idCategory": 14,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "COCKTAIL STRAWBERRY",
-        "img": "/assets/img/drink/cocktail.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "white rum"
+                "idProduct": 19,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "PEPSI",
+                "img": "/assets/img/drink/pepsi.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Pepsi Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
             },
             {
-                "line": "Strawberry juice"
-            },
-            {
-                "line": "Cane sugar"
-            }
-        ],                
-        "price": 12,
-        "extras": [
-            {
-                "idExtra": 9,
-                "name": "Make it frozen",
-                "price": 1.50
-            }
-        ]            
-    },
-    {
-        "idProduct": 12,
-        "idCategory": 14,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "MOJITO",
-        "img": "/assets/img/drink/mojito.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "white rum"
-            },
-            {
-                "line": "mint leaves"
-            },
-            {
-                "line": "sliced lime"  
-            }
-        ],                
-        "price": 12,
-        "extras": [
-            {
-                "idExtra": 9,
-                "name": "Make it frozen",
-                "price": 1.50
-            }
-        ]            
-    },
-    {
-        "idProduct": 13,
-        "idCategory": 15,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "BLACK BEER",
-        "img": "/assets/img/drink/black-beer.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "Black beer"
-            }
-        ],                
-        "price": 4
-    },
-    {
-        "idProduct": 14,
-        "idCategory": 15,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "LAGER BEER",
-        "img": "/assets/img/drink/lager-beer.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "lager beer"
-            }
-        ],                
-        "price": 3        
-    },
-    {
-        "idProduct": 15,
-        "idCategory": 16,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "RED WINE",
-        "img": "/assets/img/drink/red-wine.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "Red wine"
-            }
-        ],                
-        "price": 12       
-    },
-    {
-        "idProduct": 16,
-        "idCategory": 17,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "Coke",
-        "img": "/assets/img/drink/coke.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "Coke Bottle 33cl"
-            }
-        ],                
-        "price": 1        
-    },
-    {
-        "idProduct": 17,
-        "idCategory": 17,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "FANTA",
-        "img": "/assets/img/drink/fanta.png",
-        "allergens": [{"allergen":""}],
-        "description": [
-            {
-                "line": "Fanta Bottle 33cl"
+                "idProduct": 20,
+                "idCategory": 18,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COFFEE",
+                "img": "/assets/img/drink/coffee.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coffe"
+                    }
+                ],    
+                "price": 2
             }
         ],
-        "price": 1
+        "categories": [
+            {
+                "idCategory": 1,
+                "type": "food",
+                "category": "hamburguer",
+                "btnName": "Hamburger",
+                "icon": "/assets/icon/food/hamburger.png"
+            },
+            {
+                "idCategory": 2,
+                "type": "food",
+                "category": "hotdog",
+                "btnName": "Hotdog",
+                "icon": "/assets/icon/food/hotdog.png"
+            },
+            {
+                "idCategory": 3,
+                "type": "food",
+                "category": "meat",
+                "btnName": "Meat",
+                "icon": "/assets/icon/food/meat2.png"
+            },
+            {
+                "idCategory": 4,
+                "type": "food",
+                "category": "fish",
+                "btnName": "Fish",
+                "icon": "/assets/icon/food/fish2.png"
+            },
+            {
+                "idCategory": 5,
+                "type": "food",
+                "category": "paella",
+                "btnName": "Paella",
+                "icon": "/assets/icon/food/paella.png"
+            },
+            {
+                "idCategory": 6,
+                "type": "food",
+                "category": "pasta",
+                "btnName": "Pasta",
+                "icon": "/assets/icon/food/pasta.png"
+            },
+            {
+                "idCategory": 7,
+                "type": "food",
+                "category": "pizza",
+                "btnName": "Pizza",
+                "icon": "/assets/icon/food/pizza.png"
+            },
+            {
+                "idCategory": 8,
+                "type": "food",
+                "category": "sushi",
+                "btnName": "Sushi",
+                "icon": "/assets/icon/food/sushi.png"
+            },
+            {
+                "idCategory": 9,
+                "type": "food",
+                "category": "spicy",
+                "btnName": "Spicy",
+                "icon": "/assets/icon/food/chili_Pepper.png"
+            },
+            {
+                "idCategory": 10,
+                "type": "food",
+                "category": "taco",
+                "btnName": "Tacos",
+                "icon": "/assets/icon/food/taco.png"
+            },
+            {
+                "idCategory": 11,
+                "type": "food",
+                "category": "dessert",
+                "btnName": "Desserts",
+                "icon": "/assets/icon/food/dessert-pancakes.png"
+            },
+            {
+                "idCategory": 12,
+                "type": "food",
+                "category": "ice-cream",
+                "btnName": "Ice cream",
+                "icon": "/assets/icon/food/dessert-ice-cream2.png"
+            },
+            {
+                "idCategory": 13,
+                "type": "food",
+                "category": "pastries",
+                "btnName": "Pastries",
+                "icon": "/assets/icon/food/croissant.png"
+            },
+            {
+                "idCategory": 14,
+                "type": "drink",
+                "category": "cocktail",
+                "btnName": "Cocktail",
+                "icon": "/assets/img/drink/cocktail.png"
+            },
+            {
+                "idCategory": 15,
+                "type": "drink",
+                "category": "beer",
+                "btnName": "Beer",
+                "icon": "/assets/icon/drink/beer.png"
+            },
+            {
+                "idCategory": 16,
+                "type": "drink",
+                "category": "wine",
+                "btnName": "Wine",
+                "icon": "/assets/icon/drink/red-wine.png"
+            },
+            {
+                "idCategory": 17,
+                "type": "drink",
+                "category": "soft-drinks",
+                "btnName": "Soft drinks",
+                "icon": "/assets/icon/drink/soft-drinks.png"
+            },
+            {
+                "idCategory": 18,
+                "type": "drink",
+                "category": "coffee",
+                "btnName": "Coffe",
+                "icon": "/assets/icon/drink/coffee.png"
+            }
+        ]
     },
     {
-        "idProduct": 18,
-        "idCategory": 17,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "SPRITE",
-        "img": "/assets/img/drink/sprite.png",
-        "allergens": [{"allergen":""}],
-        "description": [
+        "restaurant": {
+            "id": 3,
+            "table": null,
+            "name": "Mc Donalds",
+            "img": "src/assets/logos-empresas/mcdonalds.png"
+        },
+        "products": [    
             {
-                "line": "Sprite Bottle 33cl"
+                "idProduct": 1,
+                "idCategory": 1,
+                "codeProduct": "",
+                "type": "food",     
+                "name": "HAMBURGUER SPECIAL",
+                "img": "/assets/img/food/hamburger.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "180 grs of beef"
+                    },
+                    {
+                        "line": "cheddar chesse"
+                    },
+                    {
+                        "line": "lettuce, tomato and"
+                    },
+                    {
+                        "line": "french fries"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 2,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MEAT LASAGNA",
+                "img": "/assets/img/food/lasagna.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "300 grs"
+                    },
+                    {
+                        "line": "chesse"
+                    },
+                    {
+                        "line": "crushed natural tomato"
+                    },
+                    {
+                        "line": "pork and beef"
+                    }
+                ],                
+                "price": 11,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 3,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SPAGHETTI",
+                "img": "/assets/img/food/pasta.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "seafood sauce"
+                    },
+                    {
+                        "line": "powdered cheese"
+                    }
+                ],                
+                "price": 13
+            },
+            {
+                "idProduct": 4,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "VEGETARIAN PIZZA",
+                "img": "/assets/img/food/pizza_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 5,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "FOUR SEASONS PIZZA",
+                "img": "/assets/img/food/pizza.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 6,
+                "idCategory": 4,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SALMON",
+                "img": "/assets/img/food/salmon.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "authentic norwegian salmon"
+                    },
+                    {
+                        "line": "assorted vegetable garnish"
+                    },
+                    {
+                        "line": "Low calorie"
+                    }
+                ],                
+                "price": 13.5,
+                "extras": [
+                    {
+                        "idExtra": 3,
+                        "name": "Add extra yogurt sauce",
+                        "price": 1
+                    }
+                ]
+            },
+            {
+                "idProduct": 7,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "CAKE",
+                "img": "/assets/img/food/cake.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "three chocolates"
+                    },
+                    {
+                        "line": "done the same day"
+                    }
+                ],                
+                "price": 5.7,
+                "extras": [
+                    {
+                        "idExtra": 4,
+                        "name": "Add extra cream",
+                        "price": 1
+                    },
+                    {
+                        "idExtra": 5,
+                        "name": "Add extra ice cream",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 8,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MACAROONS",
+                "img": "/assets/img/food/macaroons.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "variety of flavors"
+                    },
+                    {
+                        "line": "from the best pastry shop in town"
+                    }
+                ],                
+                "price": 7,
+                "extras": [
+                    {
+                        "idExtra": 7,
+                        "name": "Add extra chocolate ice cream",
+                        "price": 2.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 9,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "Pancake",
+                "img": "/assets/img/food/pancakes_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "american recipe"
+                    },
+                    {
+                        "line": "with ground cinnamon or vanilla"
+                    }
+                ],                
+                "price": 6,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
+            },
+            {
+                "idProduct": 10,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "HEALTHY PANCAKE",
+                "img": "/assets/img/food/pancakes.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made from oatmeal"
+                    },
+                    {
+                        "line": "vanilla essence"
+                    }
+                ],                
+                "price": 5,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
+            },
+            {
+                "idProduct": 11,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COCKTAIL STRAWBERRY",
+                "img": "/assets/img/drink/cocktail.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "Strawberry juice"
+                    },
+                    {
+                        "line": "Cane sugar"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
+            },
+            {
+                "idProduct": 12,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "MOJITO",
+                "img": "/assets/img/drink/mojito.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "mint leaves"
+                    },
+                    {
+                        "line": "sliced lime"  
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
+            },
+            {
+                "idProduct": 13,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "BLACK BEER",
+                "img": "/assets/img/drink/black-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Black beer"
+                    }
+                ],                
+                "price": 4
+            },
+            {
+                "idProduct": 14,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "LAGER BEER",
+                "img": "/assets/img/drink/lager-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "lager beer"
+                    }
+                ],                
+                "price": 3        
+            },
+            {
+                "idProduct": 15,
+                "idCategory": 16,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "RED WINE",
+                "img": "/assets/img/drink/red-wine.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Red wine"
+                    }
+                ],                
+                "price": 12       
+            },
+            {
+                "idProduct": 16,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "Coke",
+                "img": "/assets/img/drink/coke.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coke Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
+            {
+                "idProduct": 17,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "FANTA",
+                "img": "/assets/img/drink/fanta.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Fanta Bottle 33cl"
+                    }
+                ],
+                "price": 1
+            },
+            {
+                "idProduct": 18,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "SPRITE",
+                "img": "/assets/img/drink/sprite.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Sprite Bottle 33cl"
+                    }
+                ],
+                "price": 1
+            },
+            {
+                "idProduct": 19,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "PEPSI",
+                "img": "/assets/img/drink/pepsi.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Pepsi Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
+            {
+                "idProduct": 20,
+                "idCategory": 18,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COFFEE",
+                "img": "/assets/img/drink/coffee.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coffe"
+                    }
+                ],    
+                "price": 2
             }
         ],
-        "price": 1
+        "categories": [
+            {
+                "idCategory": 1,
+                "type": "food",
+                "category": "hamburguer",
+                "btnName": "Hamburger",
+                "icon": "/assets/icon/food/hamburger.png"
+            },
+            {
+                "idCategory": 2,
+                "type": "food",
+                "category": "hotdog",
+                "btnName": "Hotdog",
+                "icon": "/assets/icon/food/hotdog.png"
+            },
+            {
+                "idCategory": 3,
+                "type": "food",
+                "category": "meat",
+                "btnName": "Meat",
+                "icon": "/assets/icon/food/meat2.png"
+            },
+            {
+                "idCategory": 4,
+                "type": "food",
+                "category": "fish",
+                "btnName": "Fish",
+                "icon": "/assets/icon/food/fish2.png"
+            },
+            {
+                "idCategory": 5,
+                "type": "food",
+                "category": "paella",
+                "btnName": "Paella",
+                "icon": "/assets/icon/food/paella.png"
+            },
+            {
+                "idCategory": 6,
+                "type": "food",
+                "category": "pasta",
+                "btnName": "Pasta",
+                "icon": "/assets/icon/food/pasta.png"
+            },
+            {
+                "idCategory": 7,
+                "type": "food",
+                "category": "pizza",
+                "btnName": "Pizza",
+                "icon": "/assets/icon/food/pizza.png"
+            },
+            {
+                "idCategory": 8,
+                "type": "food",
+                "category": "sushi",
+                "btnName": "Sushi",
+                "icon": "/assets/icon/food/sushi.png"
+            },
+            {
+                "idCategory": 9,
+                "type": "food",
+                "category": "spicy",
+                "btnName": "Spicy",
+                "icon": "/assets/icon/food/chili_Pepper.png"
+            },
+            {
+                "idCategory": 10,
+                "type": "food",
+                "category": "taco",
+                "btnName": "Tacos",
+                "icon": "/assets/icon/food/taco.png"
+            },
+            {
+                "idCategory": 11,
+                "type": "food",
+                "category": "dessert",
+                "btnName": "Desserts",
+                "icon": "/assets/icon/food/dessert-pancakes.png"
+            },
+            {
+                "idCategory": 12,
+                "type": "food",
+                "category": "ice-cream",
+                "btnName": "Ice cream",
+                "icon": "/assets/icon/food/dessert-ice-cream2.png"
+            },
+            {
+                "idCategory": 13,
+                "type": "food",
+                "category": "pastries",
+                "btnName": "Pastries",
+                "icon": "/assets/icon/food/croissant.png"
+            },
+            {
+                "idCategory": 14,
+                "type": "drink",
+                "category": "cocktail",
+                "btnName": "Cocktail",
+                "icon": "/assets/img/drink/cocktail.png"
+            },
+            {
+                "idCategory": 15,
+                "type": "drink",
+                "category": "beer",
+                "btnName": "Beer",
+                "icon": "/assets/icon/drink/beer.png"
+            },
+            {
+                "idCategory": 16,
+                "type": "drink",
+                "category": "wine",
+                "btnName": "Wine",
+                "icon": "/assets/icon/drink/red-wine.png"
+            },
+            {
+                "idCategory": 17,
+                "type": "drink",
+                "category": "soft-drinks",
+                "btnName": "Soft drinks",
+                "icon": "/assets/icon/drink/soft-drinks.png"
+            },
+            {
+                "idCategory": 18,
+                "type": "drink",
+                "category": "coffee",
+                "btnName": "Coffe",
+                "icon": "/assets/icon/drink/coffee.png"
+            }
+        ]
     },
     {
-        "idProduct": 19,
-        "idCategory": 17,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "PEPSI",
-        "img": "/assets/img/drink/pepsi.png",
-        "allergens": [{"allergen":""}],
-        "description": [
+        "restaurant": {
+            "id": 4,
+            "table": null,
+            "name": "Burger King",
+            "img": "src/assets/logos-empresas/burgerking.png"
+        },
+        "products": [    
             {
-                "line": "Pepsi Bottle 33cl"
-            }
-        ],                
-        "price": 1        
-    },
-    {
-        "idProduct": 20,
-        "idCategory": 18,
-        "codeProduct": "",
-        "type": "drink",
-        "name": "COFFEE",
-        "img": "/assets/img/drink/coffee.jpg",
-        "allergens": [{"allergen":""}],
-        "description": [
+                "idProduct": 1,
+                "idCategory": 1,
+                "codeProduct": "",
+                "type": "food",     
+                "name": "HAMBURGUER SPECIAL",
+                "img": "/assets/img/food/hamburger.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "180 grs of beef"
+                    },
+                    {
+                        "line": "cheddar chesse"
+                    },
+                    {
+                        "line": "lettuce, tomato and"
+                    },
+                    {
+                        "line": "french fries"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
+            },
             {
-                "line": "Coffe"
+                "idProduct": 2,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MEAT LASAGNA",
+                "img": "/assets/img/food/lasagna.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "300 grs"
+                    },
+                    {
+                        "line": "chesse"
+                    },
+                    {
+                        "line": "crushed natural tomato"
+                    },
+                    {
+                        "line": "pork and beef"
+                    }
+                ],                
+                "price": 11,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    },
+                    {
+                        "idExtra": 2,
+                        "name": "Add extra bacon",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 3,
+                "idCategory": 6,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SPAGHETTI",
+                "img": "/assets/img/food/pasta.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "seafood sauce"
+                    },
+                    {
+                        "line": "powdered cheese"
+                    }
+                ],                
+                "price": 13
+            },
+            {
+                "idProduct": 4,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "VEGETARIAN PIZZA",
+                "img": "/assets/img/food/pizza_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 5,
+                "idCategory": 7,
+                "codeProduct": "",
+                "type": "food",
+                "name": "FOUR SEASONS PIZZA",
+                "img": "/assets/img/food/pizza.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made in a wood-fired oven"
+                    },
+                    {
+                        "line": "fresh vegetables from our land"
+                    },
+                    {
+                        "line": "Thick mass"
+                    }
+                ],                
+                "price": 10.5,
+                "extras": [
+                    {
+                        "idExtra": 1,
+                        "name": "Add extra chesse",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 6,
+                "idCategory": 4,
+                "codeProduct": "",
+                "type": "food",
+                "name": "SALMON",
+                "img": "/assets/img/food/salmon.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "authentic norwegian salmon"
+                    },
+                    {
+                        "line": "assorted vegetable garnish"
+                    },
+                    {
+                        "line": "Low calorie"
+                    }
+                ],                
+                "price": 13.5,
+                "extras": [
+                    {
+                        "idExtra": 3,
+                        "name": "Add extra yogurt sauce",
+                        "price": 1
+                    }
+                ]
+            },
+            {
+                "idProduct": 7,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "CAKE",
+                "img": "/assets/img/food/cake.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "three chocolates"
+                    },
+                    {
+                        "line": "done the same day"
+                    }
+                ],                
+                "price": 5.7,
+                "extras": [
+                    {
+                        "idExtra": 4,
+                        "name": "Add extra cream",
+                        "price": 1
+                    },
+                    {
+                        "idExtra": 5,
+                        "name": "Add extra ice cream",
+                        "price": 1.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 8,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "MACAROONS",
+                "img": "/assets/img/food/macaroons.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "variety of flavors"
+                    },
+                    {
+                        "line": "from the best pastry shop in town"
+                    }
+                ],                
+                "price": 7,
+                "extras": [
+                    {
+                        "idExtra": 7,
+                        "name": "Add extra chocolate ice cream",
+                        "price": 2.5
+                    }
+                ]            
+            },
+            {
+                "idProduct": 9,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "Pancake",
+                "img": "/assets/img/food/pancakes_2.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "american recipe"
+                    },
+                    {
+                        "line": "with ground cinnamon or vanilla"
+                    }
+                ],                
+                "price": 6,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
+            },
+            {
+                "idProduct": 10,
+                "idCategory": 11,
+                "codeProduct": "",
+                "type": "food",
+                "name": "HEALTHY PANCAKE",
+                "img": "/assets/img/food/pancakes.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "made from oatmeal"
+                    },
+                    {
+                        "line": "vanilla essence"
+                    }
+                ],                
+                "price": 5,
+                "extras": [
+                    {
+                        "idExtra": 8,
+                        "name": "Add extra maple syrup",
+                        "price": 1
+                    }
+                ]            
+            },
+            {
+                "idProduct": 11,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COCKTAIL STRAWBERRY",
+                "img": "/assets/img/drink/cocktail.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "Strawberry juice"
+                    },
+                    {
+                        "line": "Cane sugar"
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
+            },
+            {
+                "idProduct": 12,
+                "idCategory": 14,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "MOJITO",
+                "img": "/assets/img/drink/mojito.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "white rum"
+                    },
+                    {
+                        "line": "mint leaves"
+                    },
+                    {
+                        "line": "sliced lime"  
+                    }
+                ],                
+                "price": 12,
+                "extras": [
+                    {
+                        "idExtra": 9,
+                        "name": "Make it frozen",
+                        "price": 1.50
+                    }
+                ]            
+            },
+            {
+                "idProduct": 13,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "BLACK BEER",
+                "img": "/assets/img/drink/black-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Black beer"
+                    }
+                ],                
+                "price": 4
+            },
+            {
+                "idProduct": 14,
+                "idCategory": 15,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "LAGER BEER",
+                "img": "/assets/img/drink/lager-beer.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "lager beer"
+                    }
+                ],                
+                "price": 3        
+            },
+            {
+                "idProduct": 15,
+                "idCategory": 16,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "RED WINE",
+                "img": "/assets/img/drink/red-wine.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Red wine"
+                    }
+                ],                
+                "price": 12       
+            },
+            {
+                "idProduct": 16,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "Coke",
+                "img": "/assets/img/drink/coke.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coke Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
+            {
+                "idProduct": 17,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "FANTA",
+                "img": "/assets/img/drink/fanta.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Fanta Bottle 33cl"
+                    }
+                ],
+                "price": 1
+            },
+            {
+                "idProduct": 18,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "SPRITE",
+                "img": "/assets/img/drink/sprite.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Sprite Bottle 33cl"
+                    }
+                ],
+                "price": 1
+            },
+            {
+                "idProduct": 19,
+                "idCategory": 17,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "PEPSI",
+                "img": "/assets/img/drink/pepsi.png",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Pepsi Bottle 33cl"
+                    }
+                ],                
+                "price": 1        
+            },
+            {
+                "idProduct": 20,
+                "idCategory": 18,
+                "codeProduct": "",
+                "type": "drink",
+                "name": "COFFEE",
+                "img": "/assets/img/drink/coffee.jpg",
+                "allergens": [{"allergen":""}],
+                "description": [
+                    {
+                        "line": "Coffe"
+                    }
+                ],    
+                "price": 2
             }
-        ],    
-        "price": 2
+        ],
+        "categories": [
+            {
+                "idCategory": 1,
+                "type": "food",
+                "category": "hamburguer",
+                "btnName": "Hamburger",
+                "icon": "/assets/icon/food/hamburger.png"
+            },
+            {
+                "idCategory": 2,
+                "type": "food",
+                "category": "hotdog",
+                "btnName": "Hotdog",
+                "icon": "/assets/icon/food/hotdog.png"
+            },
+            {
+                "idCategory": 3,
+                "type": "food",
+                "category": "meat",
+                "btnName": "Meat",
+                "icon": "/assets/icon/food/meat2.png"
+            },
+            {
+                "idCategory": 4,
+                "type": "food",
+                "category": "fish",
+                "btnName": "Fish",
+                "icon": "/assets/icon/food/fish2.png"
+            },
+            {
+                "idCategory": 5,
+                "type": "food",
+                "category": "paella",
+                "btnName": "Paella",
+                "icon": "/assets/icon/food/paella.png"
+            },
+            {
+                "idCategory": 6,
+                "type": "food",
+                "category": "pasta",
+                "btnName": "Pasta",
+                "icon": "/assets/icon/food/pasta.png"
+            },
+            {
+                "idCategory": 7,
+                "type": "food",
+                "category": "pizza",
+                "btnName": "Pizza",
+                "icon": "/assets/icon/food/pizza.png"
+            },
+            {
+                "idCategory": 8,
+                "type": "food",
+                "category": "sushi",
+                "btnName": "Sushi",
+                "icon": "/assets/icon/food/sushi.png"
+            },
+            {
+                "idCategory": 9,
+                "type": "food",
+                "category": "spicy",
+                "btnName": "Spicy",
+                "icon": "/assets/icon/food/chili_Pepper.png"
+            },
+            {
+                "idCategory": 10,
+                "type": "food",
+                "category": "taco",
+                "btnName": "Tacos",
+                "icon": "/assets/icon/food/taco.png"
+            },
+            {
+                "idCategory": 11,
+                "type": "food",
+                "category": "dessert",
+                "btnName": "Desserts",
+                "icon": "/assets/icon/food/dessert-pancakes.png"
+            },
+            {
+                "idCategory": 12,
+                "type": "food",
+                "category": "ice-cream",
+                "btnName": "Ice cream",
+                "icon": "/assets/icon/food/dessert-ice-cream2.png"
+            },
+            {
+                "idCategory": 13,
+                "type": "food",
+                "category": "pastries",
+                "btnName": "Pastries",
+                "icon": "/assets/icon/food/croissant.png"
+            },
+            {
+                "idCategory": 14,
+                "type": "drink",
+                "category": "cocktail",
+                "btnName": "Cocktail",
+                "icon": "/assets/img/drink/cocktail.png"
+            },
+            {
+                "idCategory": 15,
+                "type": "drink",
+                "category": "beer",
+                "btnName": "Beer",
+                "icon": "/assets/icon/drink/beer.png"
+            },
+            {
+                "idCategory": 16,
+                "type": "drink",
+                "category": "wine",
+                "btnName": "Wine",
+                "icon": "/assets/icon/drink/red-wine.png"
+            },
+            {
+                "idCategory": 17,
+                "type": "drink",
+                "category": "soft-drinks",
+                "btnName": "Soft drinks",
+                "icon": "/assets/icon/drink/soft-drinks.png"
+            },
+            {
+                "idCategory": 18,
+                "type": "drink",
+                "category": "coffee",
+                "btnName": "Coffe",
+                "icon": "/assets/icon/drink/coffee.png"
+            }
+        ]
     }
 ]

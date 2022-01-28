@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>restaurant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col>
+        <swiper>
+          <ng-template swiperSlide>
+            <ion-img src="../../../assets/img/starbucks/Storefront.png"></ion-img>
+          </ng-template>
+          <ng-template swiperSlide>
+            <ion-img src="../../../assets/img/starbucks/starbucks-palma.jpg"></ion-img>
+          </ng-template>
+          <ng-template swiperSlide>
+            <ion-img src="../../../assets/img/starbucks/starbucks-highlights.jpg"></ion-img>
+          </ng-template>
+        </swiper>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center ion-margin-top">
+        <ion-button shape="round" >
+          <ion-icon slot="start" name="restaurant"></ion-icon>
+          <ion-text color="white">
+            Table 11
+            <!-- <h5>Table 11</h5> -->
+          </ion-text>
+         
+        </ion-button>
+      </ion-col>
+    </ion-row>
+   
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="select">
+          <ion-card-content>
+            <div class="drinks">
+              <ion-img class="imgBtn" src="../../../assets/img/drinks2.jpg" ></ion-img>
+            </div>
+              
+          </ion-card-content>
+          <ion-card-header>
+            <!-- <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle> -->
+            <ion-card-title color="primary">Drinks</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="select">
+          <ion-card-content>
+            <div>
+              <ion-img class="imgBtn" src="../../../assets/img/food2.jpg"></ion-img>
+            </div>
+          </ion-card-content>
+          <ion-card-header>
+            <ion-card-title color="primary">Food</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
