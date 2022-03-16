@@ -1,0 +1,32 @@
+{
+    "properties": [
+        {
+            "iconImg": "../../../assets/logos-empresas/burgerking.png",
+            "company": "Burger King",
+            "lat": 39.5751,
+            "long": 2.6506,
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
+            "company": "MCDonalds",
+            "lat": 39.5752,
+            "long": 2.6552,
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/starbucks-coffee.png",
+            "company": "StarBucks",
+            "lat": 39.5737,
+            "long": 2.6563,
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/100montaditos.png",
+            "company": "100 Montaditos",
+            "lat": 39.5759,
+            "long": 2.6523,
+            "card": "/select"
+        }
+    ]
+}
