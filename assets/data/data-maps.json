@@ -2,31 +2,93 @@
     "properties": [
         {
             "iconImg": "../../../assets/logos-empresas/burgerking.png",
+            "publi": "../../../assets/img/publi/kingoferta.png",
             "company": "Burger King",
-            "lat": 39.5751,
-            "long": 2.6506,
+            "lat": 39.5759522,
+            "long":  2.6528590,
+            "street": "Plaza de España",
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/burgerking.png",
+            "publi": "../../../assets/img/publi/kingoferta.png",
+            "company": "Burger King",
+            "lat": 39.5710616, 
+            "long":  2.6513849,
+            "street": "Plaza del Marquès del Palmer, 12",
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/burgerking.png",
+            "publi": "../../../assets/img/publi/kingoferta.png",
+            "company": "Burger King",
+            "lat": 39.5777146, 
+            "long":  2.6617211,
+            "street": "Calle aragón, 206",
             "card": "/select"
         },
         {
             "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
+            "publi": "../../../assets/img/publi/macoferta.png",
             "company": "MCDonalds",
-            "lat": 39.5752,
-            "long": 2.6552,
+            "lat":  39.6331094, 
+            "long": 2.7324113,
+            "street": "Mallorca Fashion Outlet",
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
+            "publi": "../../../assets/img/publi/macoferta.png",
+            "company": "MCDonalds",
+            "lat":  39.5728841, 
+            "long": 2.6573464,
+            "street": "Calle Nurredduna, 1",
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
+            "publi": "../../../assets/img/publi/macoferta.png",
+            "company": "MCDonalds",
+            "lat":  39.5665796, 
+            "long": 2.6835093,
+            "street": "Calle Son Falco, nº 24",
             "card": "/select"
         },
         {
             "iconImg": "../../../assets/logos-empresas/starbucks-coffee.png",
+            "publi": "../../../assets/img/publi/starbucks-publi-2.jpg",
             "company": "StarBucks",
-            "lat": 39.5737,
-            "long": 2.6563,
+            "lat": 39.5694914, 
+            "long": 2.6504368,
+            "street": "Plaza de Cort, 1",
             "card": "/select"
         },
         {
             "iconImg": "../../../assets/logos-empresas/100montaditos.png",
+            "publi": "../../../assets/img/publi/montaditos-publi-2.jpg",
             "company": "100 Montaditos",
-            "lat": 39.5759,
-            "long": 2.6523,
+            "street": "Plaza España",
+            "lat": 39.5757377,
+            "long": 2.6527327,
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/100montaditos.png",
+            "publi": "../../../assets/img/publi/montaditos-publi-2.jpg",
+            "company": "100 Montaditos",
+            "street": "Calle aragón nº 11",
+            "lat": 39.5736190, 
+            "long": 2.6582927,
+            "card": "/select"
+        },
+        {
+            "iconImg": "../../../assets/logos-empresas/100montaditos.png",
+            "publi": "../../../assets/img/publi/montaditos-publi-2.jpg",
+            "company": "100 Montaditos",
+            "street": "Porto Pi Centro comercial",
+            "lat": 39.5519100, 
+            "long": 2.6213677,
             "card": "/select"
         }
-    ]
-}
+    ] 
+} 

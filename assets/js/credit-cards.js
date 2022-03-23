@@ -1,5 +1,5 @@
 export function creditCards() {
-    window.onload = function () {
+
 
         const name = document.getElementById('name');
         const cardnumber = document.getElementById('cardnumber');
@@ -283,6 +283,4 @@ export function creditCards() {
         securitycode.addEventListener('focus', function () {
             document.querySelector('.creditcard').classList.add('flipped');
         });
-        };
-
 }
