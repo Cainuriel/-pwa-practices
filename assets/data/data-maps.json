@@ -7,7 +7,8 @@
             "lat": 39.5759522,
             "long":  2.6528590,
             "street": "Plaza de España",
-            "card": "/select"
+            "card": "/select",
+            "id": "004"
         },
         {
             "iconImg": "../../../assets/logos-empresas/burgerking.png",
@@ -16,7 +17,8 @@
             "lat": 39.5710616, 
             "long":  2.6513849,
             "street": "Plaza del Marquès del Palmer, 12",
-            "card": "/select"
+            "card": "/select",
+            "id": "004"
         },
         {
             "iconImg": "../../../assets/logos-empresas/burgerking.png",
@@ -25,7 +27,8 @@
             "lat": 39.5777146, 
             "long":  2.6617211,
             "street": "Calle aragón, 206",
-            "card": "/select"
+            "card": "/select",
+            "id": "004"
         },
         {
             "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
@@ -34,7 +37,8 @@
             "lat":  39.6331094, 
             "long": 2.7324113,
             "street": "Mallorca Fashion Outlet",
-            "card": "/select"
+            "card": "/select",
+            "id": "003"
         },
         {
             "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
@@ -43,7 +47,8 @@
             "lat":  39.5728841, 
             "long": 2.6573464,
             "street": "Calle Nurredduna, 1",
-            "card": "/select"
+            "card": "/select",
+            "id": "003"
         },
         {
             "iconImg": "../../../assets/logos-empresas/mcdonalds.png",
@@ -52,7 +57,8 @@
             "lat":  39.5665796, 
             "long": 2.6835093,
             "street": "Calle Son Falco, nº 24",
-            "card": "/select"
+            "card": "/select",
+            "id": "003"
         },
         {
             "iconImg": "../../../assets/logos-empresas/starbucks-coffee.png",
@@ -61,7 +67,8 @@
             "lat": 39.5694914, 
             "long": 2.6504368,
             "street": "Plaza de Cort, 1",
-            "card": "/select"
+            "card": "/select",
+            "id": "002"
         },
         {
             "iconImg": "../../../assets/logos-empresas/100montaditos.png",
@@ -70,7 +77,8 @@
             "street": "Plaza España",
             "lat": 39.5757377,
             "long": 2.6527327,
-            "card": "/select"
+            "card": "/select",
+            "id": "001"
         },
         {
             "iconImg": "../../../assets/logos-empresas/100montaditos.png",
@@ -79,7 +87,8 @@
             "street": "Calle aragón nº 11",
             "lat": 39.5736190, 
             "long": 2.6582927,
-            "card": "/select"
+            "card": "/select",
+            "id": "001"
         },
         {
             "iconImg": "../../../assets/logos-empresas/100montaditos.png",
@@ -88,7 +97,8 @@
             "street": "Porto Pi Centro comercial",
             "lat": 39.5519100, 
             "long": 2.6213677,
-            "card": "/select"
+            "card": "/select",
+            "id": "001"
         }
     ] 
 } 
